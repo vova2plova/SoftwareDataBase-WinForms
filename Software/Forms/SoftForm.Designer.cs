@@ -38,12 +38,19 @@
             // 
             // SoftView
             // 
+            this.SoftView.AllowUserToAddRows = false;
+            this.SoftView.AllowUserToDeleteRows = false;
+            this.SoftView.AllowUserToResizeColumns = false;
+            this.SoftView.AllowUserToResizeRows = false;
             this.SoftView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SoftView.Location = new System.Drawing.Point(12, 50);
+            this.SoftView.MultiSelect = false;
             this.SoftView.Name = "SoftView";
+            this.SoftView.ReadOnly = true;
             this.SoftView.RowTemplate.Height = 25;
             this.SoftView.Size = new System.Drawing.Size(776, 388);
             this.SoftView.TabIndex = 0;
+            this.SoftView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SoftView_CellClick);
             this.SoftView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SoftView_CellDoubleClick);
             // 
             // menuStrip1

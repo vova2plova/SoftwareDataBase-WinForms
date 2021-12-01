@@ -40,9 +40,14 @@
             // 
             // ContractView
             // 
+            this.ContractView.AllowUserToAddRows = false;
+            this.ContractView.AllowUserToDeleteRows = false;
+            this.ContractView.AllowUserToResizeColumns = false;
+            this.ContractView.AllowUserToResizeRows = false;
             this.ContractView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ContractView.Location = new System.Drawing.Point(12, 68);
             this.ContractView.Name = "ContractView";
+            this.ContractView.ReadOnly = true;
             this.ContractView.RowTemplate.Height = 25;
             this.ContractView.Size = new System.Drawing.Size(780, 487);
             this.ContractView.TabIndex = 0;
@@ -50,9 +55,14 @@
             // 
             // SoftView
             // 
+            this.SoftView.AllowUserToAddRows = false;
+            this.SoftView.AllowUserToDeleteRows = false;
+            this.SoftView.AllowUserToResizeColumns = false;
+            this.SoftView.AllowUserToResizeRows = false;
             this.SoftView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SoftView.Location = new System.Drawing.Point(798, 68);
             this.SoftView.Name = "SoftView";
+            this.SoftView.ReadOnly = true;
             this.SoftView.RowTemplate.Height = 25;
             this.SoftView.Size = new System.Drawing.Size(518, 487);
             this.SoftView.TabIndex = 1;

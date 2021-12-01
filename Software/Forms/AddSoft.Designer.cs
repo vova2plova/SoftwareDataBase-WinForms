@@ -70,6 +70,7 @@
             this.NameEdit.Name = "NameEdit";
             this.NameEdit.Size = new System.Drawing.Size(154, 23);
             this.NameEdit.TabIndex = 3;
+            this.NameEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameEdit_KeyPress);
             // 
             // PriceEdit
             // 
@@ -77,6 +78,7 @@
             this.PriceEdit.Name = "PriceEdit";
             this.PriceEdit.Size = new System.Drawing.Size(154, 23);
             this.PriceEdit.TabIndex = 4;
+            this.PriceEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PriceEdit_KeyPress);
             // 
             // CategoryBox
             // 
@@ -85,6 +87,7 @@
             this.CategoryBox.Name = "CategoryBox";
             this.CategoryBox.Size = new System.Drawing.Size(154, 23);
             this.CategoryBox.TabIndex = 5;
+            this.CategoryBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CategoryBox_KeyPress);
             // 
             // button1
             // 
@@ -100,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 331);
+            this.ClientSize = new System.Drawing.Size(249, 157);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CategoryBox);
             this.Controls.Add(this.PriceEdit);
@@ -110,6 +113,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddSoft";
             this.Text = "AddSoft";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddSoft_FormClosing);
             this.Load += new System.EventHandler(this.AddSoft_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

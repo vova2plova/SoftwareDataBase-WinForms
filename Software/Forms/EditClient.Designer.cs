@@ -1,6 +1,6 @@
 ﻿namespace Software.Forms
 {
-    partial class AddClient
+    partial class EditClient
     {
         /// <summary>
         /// Required designer variable.
@@ -116,7 +116,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(285, 29);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Добавить Клиента";
+            this.button1.Text = "Сохранить изменения";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -125,22 +125,22 @@
             this.AgeBox.DropDownHeight = 50;
             this.AgeBox.FormattingEnabled = true;
             this.AgeBox.IntegralHeight = false;
-            this.AgeBox.Location = new System.Drawing.Point(120, 152);
+            this.AgeBox.Location = new System.Drawing.Point(120, 156);
             this.AgeBox.MaxDropDownItems = 4;
             this.AgeBox.Name = "AgeBox";
-            this.AgeBox.Size = new System.Drawing.Size(58, 23);
+            this.AgeBox.Size = new System.Drawing.Size(50, 23);
             this.AgeBox.TabIndex = 11;
             this.AgeBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AgeBox_KeyPress);
             // 
             // NumberEdit
             // 
-            this.NumberEdit.Location = new System.Drawing.Point(119, 118);
+            this.NumberEdit.Location = new System.Drawing.Point(120, 118);
             this.NumberEdit.Mask = "(999) 000-0000";
             this.NumberEdit.Name = "NumberEdit";
-            this.NumberEdit.Size = new System.Drawing.Size(178, 23);
+            this.NumberEdit.Size = new System.Drawing.Size(177, 23);
             this.NumberEdit.TabIndex = 12;
             // 
-            // AddClient
+            // EditClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -156,9 +156,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "AddClient";
+            this.Name = "EditClient";
             this.Text = "AddClient";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AddClient_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditClient_FormClosing);
             this.Load += new System.EventHandler(this.AddClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

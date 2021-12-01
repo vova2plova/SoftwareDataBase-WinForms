@@ -38,12 +38,19 @@
             // 
             // ClientView
             // 
+            this.ClientView.AllowUserToAddRows = false;
+            this.ClientView.AllowUserToDeleteRows = false;
+            this.ClientView.AllowUserToResizeColumns = false;
+            this.ClientView.AllowUserToResizeRows = false;
             this.ClientView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientView.Location = new System.Drawing.Point(12, 57);
+            this.ClientView.MultiSelect = false;
             this.ClientView.Name = "ClientView";
+            this.ClientView.ReadOnly = true;
             this.ClientView.RowTemplate.Height = 25;
             this.ClientView.Size = new System.Drawing.Size(776, 381);
             this.ClientView.TabIndex = 0;
+            this.ClientView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClientView_CellDoubleClick);
             // 
             // menuStrip1
             // 
@@ -68,6 +75,7 @@
             this.удалитьКлиентаToolStripMenuItem.Name = "удалитьКлиентаToolStripMenuItem";
             this.удалитьКлиентаToolStripMenuItem.Size = new System.Drawing.Size(181, 20);
             this.удалитьКлиентаToolStripMenuItem.Text = "Удалить выбранного клиента";
+            this.удалитьКлиентаToolStripMenuItem.Click += new System.EventHandler(this.удалитьКлиентаToolStripMenuItem_Click);
             // 
             // ClientForm
             // 
@@ -79,6 +87,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ClientForm";
             this.Text = "ClientForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClientForm_FormClosing);
             this.Load += new System.EventHandler(this.ClientForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ClientView)).EndInit();
             this.menuStrip1.ResumeLayout(false);

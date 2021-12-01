@@ -70,6 +70,7 @@
             this.NameEdit.Name = "NameEdit";
             this.NameEdit.Size = new System.Drawing.Size(154, 23);
             this.NameEdit.TabIndex = 3;
+            this.NameEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameEdit_KeyPress);
             // 
             // PriceEdit
             // 
@@ -77,6 +78,7 @@
             this.PriceEdit.Name = "PriceEdit";
             this.PriceEdit.Size = new System.Drawing.Size(154, 23);
             this.PriceEdit.TabIndex = 4;
+            this.PriceEdit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PriceEdit_KeyPress);
             // 
             // CategoryBox
             // 
@@ -85,6 +87,7 @@
             this.CategoryBox.Name = "CategoryBox";
             this.CategoryBox.Size = new System.Drawing.Size(154, 23);
             this.CategoryBox.TabIndex = 5;
+            this.CategoryBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CategoryBox_KeyPress);
             // 
             // button1
             // 
@@ -110,6 +113,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EditSoft";
             this.Text = "Изменить ПО";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditSoft_FormClosing);
             this.Load += new System.EventHandler(this.AddSoft_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
